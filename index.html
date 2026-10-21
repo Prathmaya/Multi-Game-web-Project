@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiGame Hub</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the MultiGame Hub</h1>
+        <div class="game-selector">
+            <button onclick="switchGame('snake')" id="btn-snake" class="active">Pixel Snake</button>
+            <button onclick="switchGame('space')" id="btn-space">Space Defender</button>
+        </div>
+        <div class="scoreboard">Score: <span id="score">0</span></div>
+        <canvas id="gamecanvas" width="400" height="400"></canvas>
+        <p id="controls-text" class="controls">Use arrow keys or WASD to move the snake.</p>
+    </div>
+    <script src="space.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
